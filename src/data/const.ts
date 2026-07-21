@@ -92,13 +92,18 @@ export const LIKE_MUSIC_LIST: Music[] = [
     brand: "ML",
   },
   {
+    title: "花ざかりWeekend✿",
+    artist: "4 Luxury",
+    brand: "ML",
+  },
+  {
     title: "catch my feeling",
     artist: "MILLIONSTARS Team4th",
     brand: "ML",
   },
   {
-    title: "花ざかりWeekend✿",
-    artist: "4 Luxury",
+    title: "REFRAIN REL@TION",
+    artist: "MILLIONSTARS Team8th",
     brand: "ML",
   },
   // SM
@@ -174,6 +179,11 @@ export const LIKE_MUSIC_LIST: Music[] = [
     brand: "SC",
   },
   // Gk
+  {
+    title: "ナイワ",
+    artist: "3年1組",
+    brand: "Gk",
+  },
   {
     title: "MY STAGE",
     artist: "雨夜燕",
