@@ -1,30 +1,20 @@
 import IWSF_BACK_IMAGE from "@/assets/imgs/business-cards/IWSF2026/business-card-back.png";
 import IWSF_FRONT_IMAGE from "@/assets/imgs/business-cards/IWSF2026/business-card-front.png";
-import ACT_2_BACK_IMAGE from "@/assets/imgs/business-cards/ML10th-Act2/business-card-back.png";
-import ACT_2_FRONT_IMAGE from "@/assets/imgs/business-cards/ML10th-Act2/business-card-front.png";
 import ACT_3_BACK_IMAGE from "@/assets/imgs/business-cards/ML10th-Act3/business-card-back.png";
 import ACT_3_FRONT_IMAGE from "@/assets/imgs/business-cards/ML10th-Act3/business-card-front.png";
 import ACT_4_BACK_IMAGE from "@/assets/imgs/business-cards/ML10th-Act4/business-card-back.png";
 import ACT_4_FRONT_IMAGE from "@/assets/imgs/business-cards/ML10th-Act4/business-card-front.png";
-import CINDERELLA_GIRLS_STARLIGHT_STAGE_ICON_IMAGE from "@/assets/imgs/game-icons/CINDERELLA-GIRLS_STARLIGHT-STAGE.png";
 import GAKUEN_ICON_IMAGE from "@/assets/imgs/game-icons/Gakuen.png";
 import MILLION_LIVE_THEATER_DAYS_ICON_IMAGE from "@/assets/imgs/game-icons/MILLION-LIVE!_THEATER-DAYS.png";
-import SHINY_COLORS_ICON_IMAGE from "@/assets/imgs/game-icons/SHINY-COLORS.png";
-import SHINY_COLORS_SFP_ICON_IMAGE from "@/assets/imgs/game-icons/SHINY-COLORS_SONG-FOR-PRISM.png";
 import type { Brand } from "@/types/Brand";
 import type { BusinessCardInfo } from "@/types/BusinessCard";
 import type { GameId } from "@/types/GameId";
 import type { Music } from "@/types/Music";
 import type { ProduceIdol } from "@/types/ProduceIdol";
 
-export const P_NAME: string = "Tea";
+export const P_NAME: string = "Yu";
 
 export const BUSINESS_CARD_LIST: BusinessCardInfo[] = [
-  {
-    note: "Act-2",
-    businessCardFrontFaceImageSrc: ACT_2_FRONT_IMAGE,
-    businessCardBackFaceImageSrc: ACT_2_BACK_IMAGE,
-  },
   {
     note: "IWSF2026",
     businessCardFrontFaceImageSrc: IWSF_FRONT_IMAGE,
@@ -54,72 +44,165 @@ export const BRAND_COLOR: Record<Brand, string> = {
 
 export const GAME_ID_LIST: GameId[] = [
   {
-    title: "アイドルマスター シンデレラガールズ スターライトステージ",
-    gameId: "809649120",
-    icon: CINDERELLA_GIRLS_STARLIGHT_STAGE_ICON_IMAGE,
-    brand: "CG",
-  },
-  {
     title: "アイドルマスター ミリオンライブ！ シアターデイズ",
-    gameId: "QUJW55MJ",
+    gameId: "GGWKBCQ6",
     icon: MILLION_LIVE_THEATER_DAYS_ICON_IMAGE,
     brand: "ML",
   },
   {
-    title: "アイドルマスター シャイニーカラーズ",
-    gameId: "xfZh7LXJQK",
-    icon: SHINY_COLORS_ICON_IMAGE,
-    brand: "SC",
-  },
-  {
-    title: "アイドルマスター シャイニーカラーズ Song for Prism",
-    gameId: "U8LSSKAYH",
-    icon: SHINY_COLORS_SFP_ICON_IMAGE,
-    brand: "SC",
-  },
-  {
     title: "学園アイドルマスター",
-    gameId: "256JSYG8",
+    gameId: "NJYJ4D4Q",
     icon: GAKUEN_ICON_IMAGE,
     brand: "Gk",
   },
 ];
 
 export const LIKE_MUSIC_LIST: Music[] = [
+  // AS
   {
-    title: "夢にかけるRainbow",
-    artist: "765 MILLION ALLSTARS",
+    title: "Light Year Song",
+    artist: "高槻やよい, 菊地真, 双海亜美, 双海真美, 我那覇響",
+    brand: "AS",
+  },
+  // CG
+  {
+    title: "Joker",
+    artist: "松永涼, 大和亜季, 中野有香, 姫川友紀, 前川みく",
+    brand: "CG",
+  },
+  {
+    title: "Fin[e]～美しき終焉",
+    artist: "一ノ瀬志希, 黒埼ちとせ",
+    brand: "CG",
+  },
+  // ML
+  {
+    title: "dear...",
+    artist: "馬場このみ",
     brand: "ML",
   },
   {
-    title: "瑠璃色金魚と花菖蒲",
-    artist: "白石紬",
+    title: "水中キャンディ",
+    artist: "馬場このみ",
     brand: "ML",
+  },
+  {
+    title: "Decided",
+    artist: "徳川まつり×馬場このみ",
+    brand: "ML",
+  },
+  {
+    title: "catch my feeling",
+    artist: "MILLIONSTARS Team4th",
+    brand: "ML",
+  },
+  {
+    title: "花ざかりWeekend✿",
+    artist: "4 Luxury",
+    brand: "ML",
+  },
+  // SM
+  {
+    title: "Sign of Hope",
+    artist: "Altessimo",
+    brand: "SM",
+  },
+  {
+    title: "mermaid fermata",
+    artist: "Altessimo",
+    brand: "SM",
+  },
+  {
+    title: "Stillness≒Movement",
+    artist: "神速一魂",
+    brand: "SM",
+  },
+  {
+    title: "喜怒哀楽万国共通-Burn it up!-",
+    artist: "神速一魂",
+    brand: "SM",
+  },
+  {
+    title: "タソガレドキ、Bluesy",
+    artist: "神速一魂",
+    brand: "SM",
+  },
+  {
+    title: "CALLING",
+    artist: "神速一魂",
+    brand: "SM",
+  },
+  {
+    title: "Resonate Blessing",
+    artist: "都築圭",
+    brand: "SM",
+  },
+  {
+    title: "熱情! Burning Voltage",
+    artist: "紅井朱雀",
+    brand: "SM",
+  },
+  {
+    title: "Moon Shape/明鏡止水",
+    artist: "黒野玄武",
+    brand: "SM",
+  },
+  {
+    title: "奇想天外狂詩曲-FANTASTIC RHAPSODY-",
+    artist: "柏木翼, 都築圭, 神谷幸広, 兜大吾",
+    brand: "SM",
+  },
+  {
+    title: "OLYMPUS GOD STARS",
+    artist: "御手洗翔太, 黒野玄武, 橘志狼, 円城寺道流",
+    brand: "SM",
+  },
+  {
+    title: "Take a StuMp!",
+    artist: "315 ALLSTARS",
+    brand: "SM",
+  },
+  // SC
+  {
+    title: "Karma",
+    artist: "Fumage",
+    brand: "SC",
+  },
+  {
+    title: "Naraku",
+    artist: "Fumage",
+    brand: "SC",
+  },
+  // Gk
+  {
+    title: "MY STAGE",
+    artist: "雨夜燕",
+    brand: "Gk",
   },
 ];
 
 export const PRODUCE_IDOL_LIST: ProduceIdol[] = [
   {
-    name: "水瀬伊織",
-    brand: "AS",
-  },
-  {
-    name: "依田芳乃",
-    brand: "CG",
-  },
-  {
-    name: "白石紬",
+    name: "馬場このみ",
     brand: "ML",
   },
   {
-    name: "杜野凛世",
-    brand: "SC",
+    name: "都築圭",
+    brand: "SM",
   },
   {
-    name: "葛城リーリヤ",
+    name: "赤井朱雀",
+    brand: "SM",
+  },
+  {
+    name: "黒野玄武",
+    brand: "SM",
+  },
+  {
+    name: "雨夜燕",
     brand: "Gk",
   },
 ];
 
 /** XのID */
-export const X_ID = "tea_idolmaster";
+export const X_ID = "yuki63050198";
